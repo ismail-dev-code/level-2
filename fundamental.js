@@ -42,4 +42,16 @@ const bestScorer = players.reduce((bestPlayer, player) => {
   return player;
 }, players[0]);
 
-console.log(bestScorer);
+// console.log(bestScorer);
+
+const postArray = [
+  { id: "p-10", title: "intro to sql", author: "abul", serial: 1 },
+  { id: "p-11", title: "intro to js", author: "jamal", serial: 2 },
+  { id: "p-12", title: "intro to python", author: "babul", serial: 3 },
+];
+
+const lookupTable = postArray.reduce((table, post) => {
+  table[post.id] = post;
+  return table;
+});
+console.log(lookupTable);
