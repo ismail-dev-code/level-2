@@ -54,4 +54,32 @@ const lookupTable = postArray.reduce((table, post) => {
   table[post.id] = post;
   return table;
 });
-console.log(lookupTable);
+// console.log(lookupTable);
+
+const postArray = [
+  {
+    id: "p-11",
+    title: "intro to sql",
+    author: "abul",
+    serial: 1,
+    id: "p-12",
+    title: "intro to js",
+    author: "farul",
+    serial: 2,
+    id: "p-13",
+    title: "intro to python",
+    author: "binod",
+    serial: 3,
+    id: "p-14",
+    title: "intro to js",
+    author: "zakir",
+    serial: 4,
+    id: "p-15",
+    title: "intro to htmll",
+    author: "babul",
+    serial: 5,
+  },
+];
+const lookupTable2 = postArray.reduce((table, post));
+
+console.log(postArray);
